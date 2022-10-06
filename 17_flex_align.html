@@ -9,7 +9,7 @@
     #container {
       background: #555;
       display: flex;
-      flex-wrap: wrap;
+      /* flex-wrap: wrap; */
       /* Align items horizontal */
       justify-content: space-evenly;
       /*  
@@ -46,7 +46,9 @@
     }
 
     .item-1 {
+      align-self: flex-start;
       order: 3;
+      
     }
 
     .item-2 {
@@ -64,13 +66,14 @@
     }
 
     .item-3 {
+      align-self: flex-end;
       order: 1;
     }
     
     .item {
         background: #f4f4f4;
         border: #ccc solid 1px;
-        text-align: center;
+        /* text-align: center; */
         padding: 1rem;
         margin: 0.5rem;
         flex-basis: 200px;
